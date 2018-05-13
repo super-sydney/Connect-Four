@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Connect Four</title>
+</head>
+<body onload="reload();">
+	<button onclick="WIDTH = parseInt(window.prompt('Enter the width\n(Default value is 7)', ))">Set Rows</button><button onclick="HEIGHT = parseInt(window.prompt('Enter the height\n(Default value is 6)'))">Set Columns</button><br>
+	<button onclick="start()">Start</button><br><br id="br">
+	<canvas id="canvas"></canvas>
+	<div id="stats">
+		<p id="playerWins"></p>
+		<p id="playerLoss"></p>
+		<p id="winRate"></p>
+	</div>
+	<script type="text/javascript" src="connect.js"></script>
+	<link rel="stylesheet" type="text/css" href="connect.css">
+</body>
+</html>
